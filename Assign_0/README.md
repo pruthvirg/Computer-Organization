@@ -4,4 +4,4 @@ We are given a test bench that can be used to verify functionality of a multipli
 
 We need to complete the code for the serial multiplier so it functions correctly, and also use the hardware test bench provided in the lab to demonstrate how it works on the FPGA board
 
-File assignment_0.v contains the code for the problem statement.
+File **assignment_0.v** contains the code for the problem statement.
