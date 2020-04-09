@@ -1,0 +1,18 @@
+# Output products list for <vio0>
+_xmsgs/pn_parser.xmsgs
+vio0.asy
+vio0.cdc
+vio0.constraints/vio0.ucf
+vio0.constraints/vio0.xdc
+vio0.gise
+vio0.ngc
+vio0.sym
+vio0.ucf
+vio0.v
+vio0.veo
+vio0.xco
+vio0.xdc
+vio0.xise
+vio0_flist.txt
+vio0_readme.txt
+vio0_xmdf.tcl

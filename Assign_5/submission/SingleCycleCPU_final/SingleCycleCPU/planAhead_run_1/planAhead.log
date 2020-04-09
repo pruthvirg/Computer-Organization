@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Fri Nov  8 13:31:08 2019
+# Process ID: 17053
+# Log file: /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/planAhead_run_1/planAhead.log
+# Journal file: /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/pa.fromNetlist.tcl
+# create_project -name SingleCycleCPU -dir "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/planAhead_run_1" -part xc3s500efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU} {ipcore_dir} }
+# add_files [list {ipcore_dir/icon0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/vio0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ila0.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "clock.ucf" [current_fileset -constrset]
+Adding file '/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/clock.ucf' to fileset 'constrs_1'
+# add_files [list {clock.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 104572 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/top_ngc_157a3bb7.edif]
+Finished Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/top_ngc_157a3bb7.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design icon0.ngc ...
+WARNING:NetListWriters:298 - No output is written to icon0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus U0/U_ICON/iCORE_ID_SEL<15 : 0> on block
+   icon0 is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file icon0.edif ...
+ngc2edif: Total memory usage is 104840 kilobytes
+
+Reading core file '/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/icon0.ngc' for (cell view 'icon0', library 'top_lib', file 'top.ngc')
+Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/icon0_ngc_f27a6494.edif]
+Finished Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/icon0_ngc_f27a6494.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design vio0.ngc ...
+WARNING:NetListWriters:298 - No output is written to vio0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file vio0.edif ...
+ngc2edif: Total memory usage is 108848 kilobytes
+
+Reading core file '/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/vio0.ngc' for (cell view 'vio0', library 'top_lib', file 'top.ngc')
+Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/vio0_ngc_f27a6494.edif]
+Finished Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/vio0_ngc_f27a6494.edif]
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design ila0.ngc ...
+WARNING:NetListWriters:298 - No output is written to ila0.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_SCNT_CMP/I_SRL16.U_GAND_SRL
+   16/sel<8 : 0> on block ila0 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_HCMP/I_SRL16.U_GAND_SR
+   L16/sel<8 : 0> on block ila0 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/U_WCNT_LCMP/I_SRL16.U_GAND_SR
+   L16/sel<8 : 0> on block ila0 is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/iDOUT_dly<4 : 0> on block ila0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/iDOUT_dly<2 : 0> on block ila0 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_G
+   ANDX_SRL16/sel<29 : 0> on block ila0 is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[1].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_G
+   ANDX_SRL16/sel<29 : 0> on block ila0 is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file ila0.edif ...
+ngc2edif: Total memory usage is 106504 kilobytes
+
+Reading core file '/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/ila0.ngc' for (cell view 'ila0', library 'top_lib', file 'top.ngc')
+Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/ila0_ngc_f27a6494.edif]
+Finished Parsing EDIF File [./planAhead_run_1/SingleCycleCPU.data/cache/ila0_ngc_f27a6494.edif]
+INFO: [Designutils 20-910] Reading macro library /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/icon0.ncf]
+Finished Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/icon0.ncf]
+Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/vio0.ncf]
+Finished Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/vio0.ncf]
+Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/ila0.ncf]
+Finished Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/ipcore_dir/ila0.ncf]
+Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/clock.ucf]
+Finished Parsing UCF File [/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/clock.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 1775b3ab
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2814.266 ; gain = 84.953
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/planAhead_pid17053.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Nov  8 13:34:41 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

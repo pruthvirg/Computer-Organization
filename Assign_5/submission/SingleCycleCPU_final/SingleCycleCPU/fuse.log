@@ -1,0 +1,35 @@
+Running: /opt/tools/xilinx/ise/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu_tb_isim_beh.exe -prj /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu_tb_beh.prj work.cpu_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/rf.v" into library work
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/peripheral.v" into library work
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/alu.v" into library work
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/imem.v" into library work
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/dmem.v" into library work
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu.v" into library work
+Analyzing Verilog file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu_tb.v" into library work
+Analyzing Verilog file "/opt/tools/xilinx/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu_tb.v" Line 14: Port x031 is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu.v" Line 69: Port x4 is not connected to this instance
+WARNING:HDLCompiler:1016 - "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu.v" Line 107: Port reset is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 104060 KB
+Fuse CPU Usage: 2010 ms
+Compiling module rf
+Compiling module alu
+Compiling module peripheral
+Compiling module cpu
+Compiling module dmem
+Compiling module imem
+Compiling module cpu_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU_final/SingleCycleCPU/cpu_tb_isim_beh.exe
+Fuse Memory Usage: 664728 KB
+Fuse CPU Usage: 2090 ms
+GCC CPU Usage: 1580 ms

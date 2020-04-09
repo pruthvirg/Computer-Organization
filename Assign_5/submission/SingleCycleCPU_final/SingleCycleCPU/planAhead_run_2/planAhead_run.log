@@ -1,0 +1,49 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source /home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/pa.fromNetlist.tcl
+# create_project -name SingleCycleCPU -dir "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/planAhead_run_3" -part xc3s500efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU} {ipcore_dir} }
+# add_files [list {ipcore_dir/icon0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/vio0.ncf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/ila0.ncf}] -fileset [get_property constrset [current_run]]
+# set_property target_constrs_file "clock.ucf" [current_fileset -constrset]
+Adding file '/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/clock.ucf' to fileset 'constrs_1'
+# add_files [list {clock.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 104576 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/SingleCycleCPU.data/cache/top_ngc_157a3bb7.edif]
+INFO: [Common 17-344] 'link_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Nov  8 13:50:17 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/pruthvirg/Desktop/sem_fire/comp_org/wd_assign_3/cpu_moduler/cpu_tb_isim_beh.exe" -prj "/home/pruthvirg/Desktop/sem_fire/comp_org/wd_assign_3/cpu_moduler/cpu_tb_beh.prj" "work.cpu_tb" "work.glbl" 

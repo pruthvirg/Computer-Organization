@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/top.ncd
+OUTFILE=/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU/top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/sundar/Desktop/comporg/a3.1/SingleCycleCPU
+LICENSE=ISE
+USER_INFO=211205412_1777518462_210637445_004
