@@ -1,4 +1,4 @@
-#Assignment 4 - Pipelined CPU
+## Assignment 4 - Pipelined CPU
 ----------------------------
 
 Implement a pipelined version of the single-cycle CPU designed in assignment 3. 
@@ -16,4 +16,4 @@ You can work in groups of 2 - report should carry a clear indication of how the 
 You do NOT need to stick to the 5-stage pipeline discussed in class. Further exploration of options and comparison of possible designs will be considered for extra credit.
 
 
-##Please look at assignment-report for more detailed explanation.
+## Please look at assignment-report for more detailed explanation.
